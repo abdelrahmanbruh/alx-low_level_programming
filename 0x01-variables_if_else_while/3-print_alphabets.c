@@ -16,10 +16,12 @@ char A = A;
 while (a <= 'z')
 {
 putchar(a);
+a += 1;
 }
 while (A <= 'Z')
 {
 putchar(A);
+A += 1;
 }
 putchar('\n');
 return (0);
