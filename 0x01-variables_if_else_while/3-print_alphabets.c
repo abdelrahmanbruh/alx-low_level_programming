@@ -10,19 +10,11 @@
  */
 int main(void)
 {
-char a = a;
-char A = A;
-
-while (a <= 'z')
-{
-putchar(a);
-a += 1;
-}
-while (A <= 'Z')
-{
-putchar(A);
-A += 1;
-}
+int ch;
+for (ch = 'a'; ch <= 'z'; ch++)
+putchar(ch);
+for (ch = 'A'; ch <= 'Z'; ch++)
+putchar(ch);
 putchar('\n');
 return (0);
 }
