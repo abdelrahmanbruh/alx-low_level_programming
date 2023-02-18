@@ -20,6 +20,7 @@ if (ch != 'e' && ch != 'q')
 {
 putchar(ch);
 }
+putchar('\n');
 ch++;
 }
 return (0);
