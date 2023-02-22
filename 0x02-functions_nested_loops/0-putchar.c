@@ -1,4 +1,9 @@
 #include "main.h"
+/**
+ * main - print _putchar
+ * le sex
+ * Return: 0
+ */
 
 int main(void)
 {
