@@ -1,4 +1,6 @@
 #include <stdio.h>
+void _puts(char *str);
+#include "main.h"
 /**
  * main - Entry point
  *
