@@ -2,10 +2,10 @@
 #include <stdlib.h>
 /**
  * insert_nodeint_at_index - inserts a new node in a linked list,
- * at given position
+ * at a given position
  * @head: pointer to the first node in the list
- * @idx: index where the new node is added
- * @n: data to insert in the new node
+ * @idx: index where the new node will be added
+ * @n: data to insert new node
  *
  * Return: pointer to the new node, or NULL
  */
@@ -36,5 +36,5 @@ return (new);
 else
 temp = temp->next;
 }
- return (NULL);
+return (NULL);
 }
