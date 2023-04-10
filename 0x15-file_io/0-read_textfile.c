@@ -21,22 +21,23 @@ return (0);
 fd = open(filename, O_RDONLY);
 if (fd == -1)
 {
+free(buffer);
 return (0);
 }
-buffer = malloc(letters);
+buffer = malloc(sizeof(char) * letters);
 if (buffer == NULL)
 {
 close(fd);
 return (0);
 }
-num_read = read(fd, buffer, sizeof(buffer));
+num_read = read(fd, buffer, letters);
 if (num_read == -1)
 {
 free(buffer);
 close(fd);
 return (0);
 }
-WR = write(fd, buffer, num_read);
+WR = write(STDOUT_FILENO, buffer, num_read);
 if (num_read != WR)
 {
 free(buffer);
